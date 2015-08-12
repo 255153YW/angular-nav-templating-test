@@ -1,0 +1,20 @@
+<html>
+
+<!--Add Stock Page-->
+	<section data-role="page">   
+		<div data-role="main" >
+			<div class="main-content" ng-switch on="currentProcess">
+			  <div class="main-content" ng-switch-when="scanLocation"><scan-location></scan-location></div>
+			  <div class="main-content" ng-switch-when="scanProduct">Scan Product</div>
+			  <div class="main-content" ng-switch-when="changeStock">change stock level</div>
+			  <div class="main-content" ng-switch-when="scanLocationOnly">scan location only</div>
+			  <div class="main-content" ng-switch-default>default</div>
+			</div>
+			<nav class="page-navigation">
+				<button data-role="button" ng-click="prevClick()">{{ text.prevText }}</button>
+				<button data-role="button" class="primary-button" ng-click="nextClick()">{{ text.nextText }}</button>
+			</nav>
+		</div>
+	</section>
+
+</html>

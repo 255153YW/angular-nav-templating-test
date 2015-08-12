@@ -1,0 +1,16 @@
+<html>		
+<div class="main-content">
+	<h1>{{ labelText.headerText }}</h1>  
+
+	<form data-ajax="false"  ng-submit="checkBarcode">
+		<input type="text" ng-model="scannedData.bcValue"/>
+	</form>
+	<!-- <a data-role="button" ng-click="menuClick(page.pageID)">{{ page.pageName }}</a> -->
+	<button data-role="button" ng-click="scanClick()">{{ labelText.scanText }}</button>
+	
+	
+	<!-- <div data-bind="visible: loginShowMessage">
+		<label data-bind="html: errorMSG"></label>
+	</div> -->
+</div>
+</html>

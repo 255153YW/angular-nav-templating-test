@@ -1,0 +1,28 @@
+<html>
+<body class="app"> 
+        <!--Main Menu Page-->
+		<section data-role="page" id="main_menu">
+            
+            <div data-role="main">
+                <div class="main-content">
+                    <h1>{{ stationary.headerText }}</h1>  
+                    <nav class="app-navigation">
+                        <ul ng-repeat='page in menuItem'> 
+                            <li>
+                                <a data-role="button" ng-href="#{{ page.pageID }}" >{{ page.pageName }}</a>
+								<!-- <a data-role="button" ng-click="menuClick(page.pageID)">{{ page.pageName }}</a> -->
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li>
+                                <a data-role="button" ng-href="#logout" >{{ stationary.logoutBtnText }}</a>
+                            </li>
+                        </ul>
+                    </nav>  
+                </div>
+            </div>
+		</section> 
+		
+    </body>
+</html>

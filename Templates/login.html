@@ -1,0 +1,38 @@
+<html>
+<body class="app"> 
+        <!--Login Page-->
+		<section data-role="page">              
+		  
+            <div data-role="main" class="login" >
+                <div class="main-content">
+                    <h1>{{ stationary.headerText }}</h1>  
+
+                    <form data-ajax="false">    
+                       
+                        <label for="company_id">{{ stationary.companyIDText }}</label>
+                        <input type="text" ng-model="user.companyID" name="company_id"/>
+                        <label for="login_id">{{ stationary.userIDText }}</label>
+						<input type="text" ng-model="user.userID" name="login_id"/>
+                        <label for="login_pwd">{{ stationary.loginPWDText }}</label>
+						<input type="password" ng-model="user.loginPWD" name="login_pwd"/>
+                          
+                        <label for="cb_remember">
+						  <input type="checkbox" name="cb_remember" id="cb_remember" ng-model="cbRememberModel.value"/>
+                          <span>{{ stationary.rememberLoginText }}</span>
+                        </label>
+                       
+                        
+                        <!--<a href="#main_menu" id="add" data-role="button">Click Me</a>-->
+						<button type="submit" ng-click="loginSubmit(user,cbRememberModel)">{{ stationary.loginBtnText }}</button>
+                   
+                    </form>
+                    <!-- <div data-bind="visible: loginShowMessage">
+                        <label data-bind="html: errorMSG"></label>
+                    </div> -->
+                </div>
+		  </div>
+
+		</section>
+		
+    </body>
+</html>

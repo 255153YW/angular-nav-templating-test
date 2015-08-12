@@ -1,0 +1,32 @@
+<html ng-app="app">
+  <head>
+	 <meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"/>
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="msapplication-tap-highlight" content="no" />
+	<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+	<title>RealtimeWMS</title>
+    <!-- <script src="js/vendor/angular.min.js"></script> -->
+	<script data-require="angular.js@1.2.x" src="http://code.angularjs.org/1.2.15/angular.js" data-semver="1.2.15"></script>
+    <script src="js/vendor/angular-route.min.js"></script>
+	<script src="js/Service/accountManager.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/Controller/menuController.js"></script>
+	<script src="js/Directive/menuDirective.js"></script>
+	<script src="js/Controller/loginController.js"></script>
+	<script src="js/Directive/loginDirective.js"></script>
+	<script src="js/Controller/addStockController.js"></script>
+	<script src="js/Directive/addStockDirective.js"></script>
+	<script src="js/Controller/scanLocationController.js"></script>
+  </head>
+  <body >
+  <!-- <ul>
+    <li><a href="#/firstPage">First Page</a></li>
+    <li><a href="#/secondPage">Second Page</a></li>
+    <li><a href="#/thirdPage">Third Page</a></li>
+    <li><a href="#/">Back to Home</a></li>
+  </ul> -->
+  <div ng-view></div>
+  </body>
+</html>
